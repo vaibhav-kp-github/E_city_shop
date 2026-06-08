@@ -1,11 +1,15 @@
+import { Link } from "react-router-dom";
+
 const ProductCard = ({ product }) => {
   return (
-    <div className="border rounded-lg overflow-hidden shadow hover:shadow-lg transition">
-      <img
-        src={product.image}
-        alt={product.title}
-        className="w-full h-64 object-cover"
-      />
+    <Link to={`/product/${product.id}`} className="border rounded-lg overflow-hidden shadow hover:shadow-lg transition">
+      <div className="overflow-hidden">
+        <img
+          src={product.image}
+          alt={product.title}
+          className="w-full h-64 object-cover hover:scale-110 transition-all duration-500"
+        />
+      </div>
 
       <div className="p-4">
         <h3 className="font-semibold text-lg">{product.title}</h3>
@@ -16,7 +20,7 @@ const ProductCard = ({ product }) => {
           Add To Cart
         </button>
       </div>
-    </div>
+    </Link>
   );
 };
 

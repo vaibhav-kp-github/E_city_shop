@@ -1,13 +1,13 @@
 import ProductCard from "../components/Card";
 import products from "../assets/Product";
 import Hero from "../components/Hero";
+import LatestCollection from "../components/LatestCollection";
 
 function Home() {
   return (
     <>
       <Hero />
-
-      {/* Hero Section */}
+      <LatestCollection/> 
 
       <section className="max-w-7xl mx-auto px-4 py-16">
         <h2 className="text-3xl font-bold text-center mb-10">

@@ -14,7 +14,7 @@ const Navbar = () => {
     const [visible , setVisible] = useState(false)
 
   return (
-    <div className="flex items-center justify-between py-5 font-medium text-xl shadow-lg shadow-gray-700 " >
+    <div className="z-50 flex items-center justify-between py-5 font-medium text-xl shadow-lg shadow-gray-700 px-4 sm:px-[5vw] md:px-[7vw] lg-[9vw]" >
       <img className="w-14" src={logo} alt="logo" />
 
       <ul className="hidden sm:flex gap-5 text-sm text-gray-700">
